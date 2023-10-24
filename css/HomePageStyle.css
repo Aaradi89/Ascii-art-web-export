@@ -1,0 +1,79 @@
+body {
+    background-image: url('/img/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: hsl(0, 0%, 16%);
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;    
+}
+
+h1, h3, label {
+    color: #09f801;
+    /* color: rgb(0, 255, 17); */
+}
+
+/* .specialBr{
+  line-height: 20px;
+} */
+
+form {
+    color: white;
+    padding: 40px 0;
+}
+
+footer {
+    color: white;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    position:fixed;
+}
+
+pre {
+    background: rgba(53, 163, 58, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(33, 135, 31, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: white;
+}
+
+
+/* CSS */
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #09f801;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#ffffff00 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #ffffff00;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #000000;
+}

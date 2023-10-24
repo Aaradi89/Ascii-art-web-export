@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+	<html>
+	
+	<head>
+		<title>Reboot101</title>
+		<link rel="stylesheet" type="text/css" href="HomePageStyle.css">
+		
+	</head>
+	
+	<body>
+		<h1>Welcome To Reboot!</h1>
+		<h3>ASCII-ART-WEB</h3>
+
+
+		<form action="/ascii-art" method="post">
+	
+			<br>
+			<textarea id="inputText" name="inputText" rows="5" cols="40" required placeholder="Type your Text Here"></textarea><br><br>
+	
+			<label for="banner">Choose Banner</label>
+			<br><br>
+			<select id="banner" name="banner">
+		<option value="standard" selected>Standard</option>
+			<option value="shadow">Shadow</option>
+			<option value="thinkertoy">Thinkertoy</option>
+		</select>
+		<br><br><br>
+			<input type="submit" value="Generate Art" class="button-89">
+		</form>
+
+	<pre {{if .Visibility}} style="visibility: visible;"{{else}} style="visibility: hidden;"{{end}} >{{ .Art }}</pre>
+		<footer>Created by Ali's Group ©</footer>
+
+	</body>
+	</html>
